@@ -2,8 +2,8 @@ import { BookAlert } from 'lucide-react';
 import Task from './Task';
 
 const TaskList = ({ tasks }) => {
-    const handleDescricao = () => {
-        alert(descricao);
+    const handleDescricao = (task) => {
+        alert(task.descricao || 'Descrição não disponível.');
     };
 
     return (
@@ -27,7 +27,7 @@ const TaskList = ({ tasks }) => {
                         nivel={task.nivel}
                         status={task.status}
                     />
-                    <button>
+                    <button onClick={() => handleDescricao(task)}>
                         <BookAlert />
                     </button>
                 </div>

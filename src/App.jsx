@@ -11,7 +11,7 @@ function App() {
             nivel: 'Fácil',
             status: true,
             descricao:
-                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex doloribus quaerat est nemo veniam esse illo labore, porro aliquid nihil sed corporis alias laborum assumenda, blanditiis qui incidunt voluptatibus.',
+                '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex doloribus quaerat est nemo veniam esse illo labore, porro aliquid nihil sed corporis alias laborum assumenda, blanditiis qui incidunt voluptatibus.',
         },
 
         {
@@ -21,7 +21,7 @@ function App() {
             nivel: 'Médio',
             status: true,
             descricao:
-                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex doloribus quaerat est nemo veniam esse illo labore, porro aliquid nihil sed corporis alias laborum assumenda, blanditiis qui incidunt voluptatibus.',
+                '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex doloribus quaerat est nemo veniam esse illo labore, porro aliquid nihil sed corporis alias laborum assumenda, blanditiis qui incidunt voluptatibus.',
         },
 
         {
@@ -31,7 +31,7 @@ function App() {
             nivel: 'Difícil',
             status: true,
             descricao:
-                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex doloribus quaerat est nemo veniam esse illo labore, porro aliquid nihil sed corporis alias laborum assumenda, blanditiis qui incidunt voluptatibus.',
+                '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex doloribus quaerat est nemo veniam esse illo labore, porro aliquid nihil sed corporis alias laborum assumenda, blanditiis qui incidunt voluptatibus.',
         },
     ];
 
