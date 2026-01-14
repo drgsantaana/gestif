@@ -1,5 +1,6 @@
 import { BookAlert } from 'lucide-react';
 import Task from './Task';
+import './TaskList.css';
 
 const TaskList = ({ tasks }) => {
     const handleDescricao = (task) => {
@@ -7,19 +8,9 @@ const TaskList = ({ tasks }) => {
     };
 
     return (
-        <div
-            className="task-list"
-            style={{
-                padding: '1em',
-                border: '1px solid #ddd',
-                borderRadius: '0.5em',
-                maxWidth: '400px',
-                margin: '0 auto',
-                backgroundColor: '#f9f9f9',
-            }}
-        >
+        <div className="task-list">
             {tasks.map((task) => (
-                <div>
+                <div key={task.id} style={{ display: 'flex', alignItems: 'center', marginBottom: '1em', gap: '1em' }}>
                     <Task
                         key={task.id}
                         titulo={task.titulo}
