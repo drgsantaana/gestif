@@ -10,16 +10,15 @@ const TaskList = ({ tasks }) => {
     return (
         <div className="task-list">
             {tasks.map((task) => (
-                <div key={task.id} style={{ display: 'flex', alignItems: 'center', marginBottom: '1em', gap: '1em' }}>
+                <div key={task.id} className="task-row">
                     <Task
-                        key={task.id}
                         titulo={task.titulo}
                         categoria={task.categoria}
                         nivel={task.nivel}
                         status={task.status}
                     />
-                    <button onClick={() => handleDescricao(task)}>
-                        <BookAlert />
+                    <button className="action-button" onClick={() => handleDescricao(task)}>
+                        <BookAlert size={20} />
                     </button>
                 </div>
             ))}
