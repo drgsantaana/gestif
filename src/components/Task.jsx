@@ -5,11 +5,7 @@ const Task = ({titulo, categoria, nivel, status}) => {
     return (
         <>
 
-            <div className="container">
-        <header>
-            <h1>Task Dashboard</h1>
-            <p className="subtitle">Manage your tasks efficiently</p>
-        </header>
+            
         
         <div className="dashboard">
             <div className="task-card">
@@ -35,7 +31,6 @@ const Task = ({titulo, categoria, nivel, status}) => {
                 <button className="action-button">View Implementation Details</button> */}
             </div>
         </div>
-    </div>
 
 
         </>
