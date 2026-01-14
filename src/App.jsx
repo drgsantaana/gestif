@@ -9,7 +9,7 @@ function App() {
             titulo: 'Aula React 01',
             categoria: 'Educação',
             nivel: 'Fácil',
-            status: true,
+            status: 'concluido',
             descricao:
                 '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex doloribus quaerat est nemo veniam esse illo labore, porro aliquid nihil sed corporis alias laborum assumenda, blanditiis qui incidunt voluptatibus.',
         },
