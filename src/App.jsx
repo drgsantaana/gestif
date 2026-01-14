@@ -1,33 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Task from "./components/Task"
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const tasks = [
+    {
+      id: 1,
+      titulo: "Aula React 01",
+      categoria: "Educação",
+      nivel: "Fácil",
+      status: true
+    },
+
+    {
+      id: 2,
+      titulo: "Aula Natação 01",
+      categoria: "Esporte",
+      nivel: "Médio",
+      status: true
+    },
+
+    {
+      id: 3,
+      titulo: "Agachar com 500kg",
+      categoria: "Esporte",
+      nivel: "Difícil",
+      status: true
+    }
+  ]
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {
+        tasks.map((task) => (
+          <Task 
+            key = {task.id}
+            titulo = {task.titulo}
+            categoria = {task.categoria}
+            nivel = {task.nivel}
+            status = {task.status}
+          />
+        ))
+      }
     </>
   )
 }
