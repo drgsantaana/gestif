@@ -20,13 +20,13 @@ const Task = ({titulo, categoria, nivel, status}) => {
                             {status ? <BadgeCheck /> : <Badge />}
                         </span>
                     </span>
-                    {nivel == 'Alto' && 
+                    {nivel == 'Alto' & !status ? 
                     <span className="meta-item">
                         <span className="status completed">
                             <BadgeAlert />
                         </span>
                     </span>
-                    }
+                    : <span></span>}
                 </div>
                 {/* <p className="task-description">Set up secure user authentication with JWT tokens and password hashing.</p>
                 <button className="action-button">View Implementation Details</button> */}
