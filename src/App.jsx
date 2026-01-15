@@ -1,4 +1,3 @@
-import Task from './components/Task';
 import './App.css';
 import TaskList from './components/TaskList';
 

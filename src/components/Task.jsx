@@ -6,7 +6,7 @@ const Task = ({titulo, categoria, nivel, status}) => {
         <>
 
         <div className="dashboard">
-            <div className="task-card">
+            <div className={`task-card ${nivel === 'Alto' ? 'alto' : ''}`}>
                 <h2 className="task-title">{titulo}</h2>
                 <div className="task-meta">
                     <span className="meta-item">
