@@ -11,13 +11,8 @@ const TaskList = ({ tasks }) => {
         <div className="task-list">
             {tasks.map((task) => (
                 <div key={task.id} className="task-row">
-                    <Task
-                        titulo={task.titulo}
-                        categoria={task.categoria}
-                        nivel={task.nivel}
-                        status={task.status}
-                    />
-                    <button className="action-button" onClick={() => handleDescricao(task)}>
+                    <Task titulo={task.titulo} categoria={task.categoria} nivel={task.nivel} status={task.status} />
+                    <button title="Descrição" className="action-button" onClick={() => handleDescricao(task)}>
                         <BookAlert size={20} />
                     </button>
                 </div>
